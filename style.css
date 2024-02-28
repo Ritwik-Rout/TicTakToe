@@ -27,11 +27,11 @@ body{
 }
 
 .box{
+    box-shadow: 5px 5px 9px #253033;
     height: 18vmin;
     width: 18vmin;
     border-radius: 1rem;
     border: none;
-    box-shadow: 0 0 1 rem rgba(0,0,0,1);
     font-size: 8vmin;
     color: #b0413e;
     background-color: #ffffc1;
