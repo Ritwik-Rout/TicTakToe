@@ -34,9 +34,25 @@ boxes.forEach((box)=>{
     }
        box.disabled="true"; 
 
+       checkDraw();
        checkWinner();
     })
-})
+});
+
+//Function for draw check
+function checkDraw(){
+    let allBoxDisabled=true;
+    for(let box of boxes){
+        if(!box.disabled){
+            allBoxDisabled=false;
+            break;
+        }
+    }
+    if(allBoxDisabled){
+        msg.innerText="It's a Draw!";
+        msgContainer.classList.remove("hide");
+    }
+}
 
 const enableBoxes=()=>{
     for(let box of boxes){

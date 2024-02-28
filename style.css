@@ -47,12 +47,14 @@ body{
 }
 
 #new-btn{
+    margin: 0 auto;
     padding: 1rem;
     font-size: 1.25rem;
     background-color: #191913;
     color: white;
     border-radius: 1rem;
     border: none;
+    width: 200px;
 }
 
 #msg{
@@ -61,7 +63,15 @@ body{
 }
 
 .msg-container{
-    height: 100vmin;
+    box-shadow: 8px 10px 12px rgb(21, 21, 45);
+    border-radius: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 300px;
+    background-color: aquamarine;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -71,4 +81,8 @@ body{
 
 .hide{
     display: none;
+}
+
+main{
+    margin-top: 70px;
 }
